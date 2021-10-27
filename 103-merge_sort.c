@@ -64,7 +64,7 @@ void combine(int *array, size_t left, size_t middle,
 
 	printf("Merging...\n");
 	printf("[left]: ");
-	for (x = left; z < middle; z++)
+	for (x = left; x < middle; x++)
 	{
 		if (x < middle - 1)
 			printf("%d, ", array[x]);
@@ -83,12 +83,12 @@ void combine(int *array, size_t left, size_t middle,
 	{
 		if (i < middle && (j >= right || array[i] <= array[j]))
 		{
-			tmp_arr[z] = array[i];
+			tmp_arr[x] = array[i];
 			i++;
 		}
 		else
 		{
-			tmp_arr[z] = array[j];
+			tmp_arr[x] = array[j];
 			j++;
 		}
 	}
