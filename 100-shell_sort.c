@@ -8,7 +8,7 @@
  * Return: Nothing
  */
 
-void shell_sort(int *array, size_t size);
+void shell_sort(int *array, size_t size)
 {
 	int a = 0;
 	int b = 0;
@@ -19,12 +19,12 @@ void shell_sort(int *array, size_t size);
 	if (!array || size < 2 || !size)
 		return;
 
-	while (n >= top / 3)
+	while (n <= top / 3)
 	{
 		n = n * 3 + 1;
 	}
 
-	while (n > 1)
+	while (n >= 1)
 	{
 		for (a = n; a < top; a++)
 		{
